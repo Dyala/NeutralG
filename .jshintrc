@@ -1,0 +1,11 @@
+{
+    "node": true,
+    "browser": true,
+    "globals": {
+        "angular": false,
+		"$": false,
+		"globalFunction": false,
+		"servicesInit": false,
+		"owl": false
+    }
+}

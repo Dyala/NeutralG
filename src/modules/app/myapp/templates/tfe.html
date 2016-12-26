@@ -1,0 +1,86 @@
+<!-- Container -->
+  <div id="container">
+
+    <!-- Start Header -->
+    <header-directive></header-directive>
+
+    <!-- Start Page Banner -->
+    <div class="page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Case Studies</h2>
+          </div>
+          <div class="col-md-6">
+            <ul class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Case Studies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Page Banner -->
+
+    <!-- Start Content -->
+    <div id="content">
+      <div class="container">
+        <div class="project-page row">
+
+          <div class="col-md-2 sidebar left-sidebar">
+            <!-- Categories Widget -->
+            <div class="widget widget-categories">
+              <h4>Transport Fuel and Efficiency <span class="head-line"></span></h4>
+              <ul>
+                <li>
+                  <a ng-click="currentV = 'Vone'" class="clickable">Deutsche Post</a>
+                </li>
+                <li>
+                  <a ng-click="currentV = 'Vtwo'" class="clickable">DHL Express Holland</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Start Project Content -->
+          <div class="project-content col-md-10" ng-show="currentV == 'initial'">
+            <h4><span>Case Study</span></h4>
+            <p>Transport fuel and efficiency</p>
+            <h4><span>Case Study Details</span></h4>
+            <p><strong>Road Transportation</strong></p>
+            <p>Fossil diesel, THE fuel for almost all heavy-duty trucks in this world, adds CO2 to the atmosphere when burned and its supplies are limited. Modern diesel engines are very efficient when operating in the “sweet spot” but they become increasingly inefficient as revs move outside that band and they have large numbers of moving parts requiring maintenance and leading to large (>50%) efficiency losses between the fuel and the wheel. Moreover, friction brakes wear and generate waste heat that can not be recaptured. There are two main approaches to overcome these problems:</p>
+            <ul style="list-style-type:disc">
+              <li style="margin-left: 30px;"><strong>Reduce, i.e. make the whole truck “system” more energy efficient</strong></li>
+              <li style="margin-left: 30px;"><strong>Replace, i.e. find a way to displace fossil diesel by a renewable environmentally friendly resource</strong></li>
+            </ul>
+            <p><strong>Reduce</strong><br>The most prominent technology to improve the energy efficiency is hybrid technology. Hybrid electric vehicles use an energy storage device (usually a battery) and electric motor as well as the internal combustion engine to power the vehicle. As the vehicle gets up to speed, the second energy source does some or all of the work in place of the conventional engine. As the vehicle slows down, the hybrid system captures energy for future use that would have been lost. The duty cycle of the vehicle is a major factor when determining the value a hybrid vehicle can provide, i.e. greatest fuel economy benefits can be achieved particularly in a duty cycle that includes city, stop-and-go, or high-idling modes. So Hybrids provide greatest value when they can smooth out the energy demands on the conventional engine. Unfortunately, this makes long-haul road freight currently not very attractive for hybrid technology, both ecologically and economically.</p>
+            <p><strong>Replace</strong><br>One option is to go one step further than the hybrid technology to get to full electric vehicles. In fact, electric vehilces have a long track record, e.g. Smith Electric vehicles have been in continous production since 1910. Range, payload and high costs have been the major constraints for electric trucks. Nonetheless, Smith Electric trucks with 4t payload and over 100miles range – the largest electric truck to date – are successfully employed in DHL‘s consolidation centres in Heathrow & Bristol City Centre. Electric vehicles have zero emissions at point of use but the carbon emissions are created at the power stations that generate the electricity. However, electricity can be carbon neutral when produced from wind power for example</p>
+          </div>
+          <!-- End Project Content -->
+          <deutche class="col-md-10" ng-show="currentV == 'Vone'"> </deutche>
+          <dhl-express class="col-md-10" ng-show="currentV == 'Vtwo'"> </dhl-express>
+
+        </div>
+        
+
+        <!-- Start Recent Projects Carousel -->
+        <!-- <div class="recent-projects">
+          <h4 class="title"><span>Our Services</span></h4>
+         <project-carousel></project-carousel>
+        </div> -->
+        <!-- End Recent Projects Carousel -->
+
+      </div>
+    </div>
+    <!-- End Content -->
+
+
+    <footer-directive></footer-directive>
+  </div>
+  <!-- End Container -->
+
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+  <script type="text/javascript" src="js/script.js"></script>

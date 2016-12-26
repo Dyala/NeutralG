@@ -1,0 +1,90 @@
+
+
+  <!-- Container -->
+  <div id="container">
+
+    <!-- Start Header -->
+    <header-directive></header-directive>
+
+
+    <!-- Start Page Banner -->
+    <div class="page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Case Studies</h2>
+          </div>
+          <div class="col-md-6">
+            <ul class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Case Studies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Page Banner -->
+
+
+
+    <!-- Start Content -->
+    <div id="content">
+      <div class="container">
+        <div class="project-page row">
+
+          <div class="col-md-2 sidebar left-sidebar">
+            <!-- Categories Widget -->
+            <div class="widget widget-categories">
+              <h4>Site Energy and Efficiency <span class="head-line"></span></h4>
+              <ul>
+                <li>
+                  <a ng-click="currentVal = 'one'" class="clickable">DHL Normanton</a>
+                </li>
+                <li>
+                  <a ng-click="currentVal = 'two'" class="clickable">Dnata Freight Dubai</a>
+                </li>
+                <li>
+                  <a ng-click="currentVal = 'three'" class="clickable">BAT Zevenaar</a>
+                </li>
+                <li>
+                  <a ng-click="currentVal = 'four'" class="clickable">HAVI Guangzhou</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Start Project Content -->
+          <div class="project-content col-md-10" ng-show="currentVal == 'zero'">
+            <h4><span>Case Study</span></h4>
+            <p>Site Energy and Efficiency</p>
+            <h4><span>Case Study Details</span></h4>
+            <p><strong>Warehousing</strong></p>
+            <p>Warehouses have high energy demands because they are large buildings and many are operated 24 hours for seven days every week. Many warehouses are heated by gas-based heating systems, whether air or water based, and it is the exhaust gases from these systems which gives rise to the carbon footprint. All gas based systems will create CO2 and other exhaust gases, and the general rule applies - ”if it burns, it’s bad for your carbon footprint”.</p>
+            <p>In northern latitudes, heating usually causes the highest energy demands and it is air losses which are the greatest cause of energy wastage. These operational air losses may be caused by obvious problems such as open doors (such as loading bays) and poorly insulated floors and walls, but we have frequently found that there are structural air losses due to gaps in the actual building construction. Therefore increasing the air tightness of the building offers the greatest potential to reduce the heating demand.</p>
+            <p>Another common issue is air stratification inside a warehouse. This happens because warm air rises due to buoyancy and without efficient down-mixing warm air is trapped under the roof where it is of no value to workers and may even damage products that are stored on top shelves.</p>
+          </div>
+          <!-- End Project Content -->
+
+        <dhl class="col-md-10" ng-show="currentVal == 'one'"> </dhl>
+        <dnata class="col-md-10" ng-show="currentVal == 'two'"> </dnata>
+        <bat class="col-md-10" ng-show="currentVal == 'three'"> </bat>
+        <havi class="col-md-10" ng-show="currentVal == 'four'"> </havi>
+
+        </div>
+
+        <!-- Start Recent Projects Carousel -->
+        <!-- <div class="recent-projects">
+          <h4 class="title"><span>Our Services</span></h4>
+          <project-carousel></project-carousel>
+        </div> -->
+        <!-- End Recent Projects Carousel -->
+
+      </div>
+    </div>
+    <!-- End Content -->
+
+<footer-directive></footer-directive>
+  </div>
+  <!-- End Container -->
+
+  <script type="text/javascript" src="js/script.js"></script>

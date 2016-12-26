@@ -1,0 +1,99 @@
+<!-- Container -->
+<div id="container">
+  <!-- Start Header -->
+  <header-directive></header-directive>
+
+
+  <!-- Start Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Our Services</h2>
+        </div>
+        <div class="col-md-6">
+          <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Page Banner -->
+
+
+
+  <!-- Start Content -->
+  <div id="content">
+    <div class="container">
+      <div class="project-page row">
+
+        <div class="col-md-2 sidebar left-sidebar">
+          <!-- Categories Widget -->
+          <div class="widget widget-categories">
+            <h4>Our Services <span class="head-line"></span></h4>
+            <ul>
+              <li>
+                <a ng-click="currentView = 'ViewOne'" class="clickable" onclick="scroll(0, 0)">Supply Chain Strategy</a>
+              </li>
+              <li>
+                <a ng-click="currentView = 'ViewTwo'" class="clickable" onclick="scroll(0, 0)">Sustainability Strategy</a>
+              </li>
+              <li>
+                <a ng-click="currentView = 'ViewThree'" class="clickable" onclick="scroll(0, 0)">Sustainability Footprint Assessment</a>
+              </li>
+              <li>
+                <a ng-click="currentView = 'ViewFour'" class="clickable" onclick="scroll(0, 0)">Technology Assessment</a>
+              </li>
+              <li>
+                <a ng-click="currentView = 'ViewFive'" class="clickable" onclick="scroll(0, 0)">Sustainability Design for New Builds</a>
+              </li>
+              <li>
+                <a ng-click="currentView = 'ViewSix'" class="clickable" onclick="scroll(0, 0)">Transport Operation Assessment and Fuel Reduction Programs</a>
+              </li>
+              <li>
+                <a ng-click="currentView = 'ViewSeven'" class="clickable" onclick="scroll(0, 0)">Site Assessment and Energy Reduction</a>
+              </li>
+              <li>
+                <a ng-click="currentView = 'ViewEight'" class="clickable" onclick="scroll(0, 0)">Biodiesel Production</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <directive-one ng-if="currentView == 'ViewOne'"> </directive-one>
+        <directive-two ng-if="currentView == 'ViewTwo'"> </directive-two>
+        <directive-three ng-if="currentView == 'ViewThree'"> </directive-three>
+        <directive-four ng-if="currentView == 'ViewFour'"> </directive-four>
+        <directive-five ng-if="currentView == 'ViewFive'"> </directive-five>
+        <directive-six ng-if="currentView == 'ViewSix'"> </directive-six>
+        <directive-seven ng-if="currentView == 'ViewSeven'"> </directive-seven>
+        <directive-eight ng-if="currentView == 'ViewEight'"> </directive-eight>
+
+      </div>
+
+      <!-- Start Recent Projects Carousel -->
+      <div class="recent-projects">
+        <h4 class="title"><span>Our Services</span></h4>
+       <project-carousel></project-carousel>
+      </div>
+      <!-- End Recent Projects Carousel -->
+    </div>
+  </div>
+  <!-- End Content -->
+
+
+  <!-- Start Footer -->
+  <footer-directive></footer-directive>
+  <!-- End Footer -->
+
+</div>
+<!-- End Container -->
+
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+
+<script type="text/javascript" src="js/script.js"></script>

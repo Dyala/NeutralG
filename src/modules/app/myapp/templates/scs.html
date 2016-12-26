@@ -1,0 +1,89 @@
+<!-- Container -->
+<div id="container">
+
+  <header-directive> </header-directive>
+
+
+  <!-- Start Page Banner -->
+  <div class="page-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Case Studies</h2>
+        </div>
+        <div class="col-md-6">
+          <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Case Studies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Page Banner -->
+
+  <!-- Start Content -->
+  <div id="content">
+    <div class="container">
+      <div class="project-page row">
+        <div class="col-md-2 sidebar left-sidebar">
+          <!-- Categories Widget -->
+          <div class="widget widget-categories">
+            <h4>Supply Chain Sustainability <span class="head-line"></span></h4>
+            <ul>
+              <li>
+                <a ng-click="current = 'first'" class="clickable">Government of Dubai</a>
+              </li>
+              <li>
+                <a ng-click="current = 'second'" class="clickable">DX Business Direct</a>
+              </li>
+              <li>
+                <a ng-click="current = 'third'" class="clickable">Atlantis The Palm, Dubai</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Start Project Content -->
+        <div class="project-content col-md-10" ng-show="current == 'main'">
+          <h4><span>Case Study</span></h4>
+          <p>Supply Chain Sustainability</p>
+          <h4><span>Case Study Details</span></h4>
+          <p><strong>A baseline for coherent strategy</strong></p>
+          <p>Most large organisations, from governments to corporations, recognise the need to define and follow a coherent sustainability strategy as part of their overall strategic plan.  Legislation, public opinion and customer or shareholder demands all impact this one way or another, demanding action that could range from the publication of environmental impact information to the redesign of manufacturing and distribution processes. </p>
+          <p>Ideas of what to do often abound and many of these organisations have learned in the last few years that efforts can easily be wasted. This might be due to the poor targeting of resources which would be better used elsewhere, or simply because the improvement a project or policy brings about cannot be shown because it has not been measured properly.</p>
+          <p>In any case setting a firm baseline requires an agreed system of measurement for an organisation’s sustainability impact and an accepted accounting system to apportion costs and benefits. A coherent strategy for management and reduction of that impact and the costs it brings can then be mapped out, planned and executed.”</p>
+        </div>
+        <!-- End Project Content -->
+        
+        <dubai-gov class="col-md-10" ng-show="current == 'first'"> </dubai-gov>
+        <dx class="col-md-10" ng-show="current == 'second'"> </dx>
+        <atlantis class="col-md-10" ng-show="current == 'third'"> </atlantis>
+
+      </div>
+
+      <!-- Start Recent Projects Carousel -->
+      <!-- <div class="recent-projects">
+        <h4 class="title"><span>Our Services</span></h4>
+        <project-carousel> </project-carousel>
+      </div> -->
+      <!-- End Recent Projects Carousel -->
+
+    </div>
+  </div>
+  <!-- End Content -->
+
+
+  <footer-directive> </footer-directive>
+
+</div>
+<!-- End Container -->
+
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
