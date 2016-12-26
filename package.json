@@ -30,6 +30,7 @@
     "imagemin-gifsicle": "^5.1.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
+    "imagemin-pngquant": "^5.0.0",
     "jshint-stylish": "^0.2.0",
     "karma": "^0.12.31",
     "lodash._isnative": "^2.4.1",
