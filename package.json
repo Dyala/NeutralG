@@ -28,6 +28,7 @@
     "gulp-uglify": "^0.3.0",
     "gulp-watch": "^0.6.9",
     "imagemin-gifsicle": "^5.1.0",
+    "imagemin-jpegtran": "^5.0.2",
     "jshint-stylish": "^0.2.0",
     "karma": "^0.12.31",
     "modernizr": "^3.3.1",
