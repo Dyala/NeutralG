@@ -45,7 +45,7 @@
   },
   "browserify-shim": {},
   "scripts": {
-    "start": "gulp serve",
+    "start": "gulp",
     "postinstall": "bower install"
   }
 }
