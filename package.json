@@ -4,17 +4,16 @@
     "node": ">=0.12.0"
   },
   "dependencies": {
-	"modernizr": "^3.3.1",
-	"bower": "1.3.12",
+    "bower": "1.3.12",
     "browserify": "4.2.3",
     "browserify-shim": "^3.6.0",
     "connect": "^2.24.2",
     "gulp": "^3.8.0",
-    "gulp-header": "1.2.2",
     "gulp-angular-templatecache": "^1.2.1",
     "gulp-autoprefixer": "0.0.8",
     "gulp-concat": "2.6.0",
     "gulp-csso": "^0.2.9",
+    "gulp-header": "1.2.2",
     "gulp-if": "^1.2.1",
     "gulp-imagemin": "^0.6.1",
     "gulp-jshint": "^1.6.2",
@@ -28,13 +27,14 @@
     "gulp-ruby-sass": "^0.7.1",
     "gulp-uglify": "^0.3.0",
     "gulp-watch": "^0.6.9",
+    "imagemin-gifsicle": "^5.1.0",
     "jshint-stylish": "^0.2.0",
     "karma": "^0.12.31",
+    "modernizr": "^3.3.1",
     "run-sequence": "^0.3.6",
     "vinyl-source-stream": "^0.1.1",
     "watchify": "^0.10.2",
-    "yargs": "^1.2.2",
-	"imagemin-gifsicle": "^0.1.1"
+    "yargs": "^1.2.2"
   },
   "browser": {
     "angular": "./bower_components/angular/angular.min.js",
@@ -43,7 +43,7 @@
     "angular-aria": "./bower_components/angular-aria/angular-aria.min.js",
     "angular-material": "./bower_components/angular-material/angular-material.min.js",
     "angular-translate": "./bower_components/angular-translate/angular-translate.min.js"
-  },  
+  },
   "scripts": {
     "start": "gulp default",
     "postinstall": "bower install"
