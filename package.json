@@ -46,6 +46,6 @@
   "scripts": {
     "start": "gulp default",
     "postinstall": "bower install"
-  }
+  },
   "browserify-shim": {},
 }
